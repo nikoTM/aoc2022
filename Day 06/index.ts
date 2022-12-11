@@ -21,7 +21,7 @@ function secondSolution(comms: string, length: number) {
   });
 }
 
-function initialSolution(comms: string, length: number) {
+function _initialSolution(comms: string, length: number) {
   const seq = normalize(comms);
   const regex = new RegExp('(?=(?:[a-z]){' + length + '})(?!.*([a-z]).*\\1)');
 

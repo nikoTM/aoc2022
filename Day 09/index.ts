@@ -148,7 +148,7 @@ function solveTwo(movesX: string) {
       } else if (rope[i - 1].x === rope[i].x && rope[i - 1].y === rope[i].y) {
         return rope;
       } else {
-        let tail = { x: rope[i].x, y: rope[i].y };
+        const tail = { x: rope[i].x, y: rope[i].y };
         rope[i] = moveTail(rope[i - 1], rope[i]);
 
         if (
